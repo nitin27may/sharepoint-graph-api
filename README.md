@@ -65,7 +65,7 @@ cd sharepoint-graph-api
    ```
 
 ### 4. Authenticate
-- When you launch the application, it will prompt you to log in with your Microsoft 365 account.
+- This project has `GraphApiCientFactory` which is handling the authentication.
 - Upon successful authentication, the application will obtain an access token to interact with SharePoint Online via the Graph API.
 
 ## Usage
