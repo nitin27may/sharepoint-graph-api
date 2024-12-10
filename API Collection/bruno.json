@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "SharePoint GraphAPI Crud",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

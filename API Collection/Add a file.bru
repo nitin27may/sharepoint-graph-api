@@ -1,0 +1,16 @@
+meta {
+  name: Add a file
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/GraphApi/{{siteName}}/{{driveName}}/{{folderPath}}
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  Name: NewFile
+  File: @file(C:\Users\nitin\OneDrive\Documents\Aaravhomework.pdf)
+}

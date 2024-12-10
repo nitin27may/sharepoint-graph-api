@@ -1,0 +1,16 @@
+meta {
+  name: Delete a file
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{baseUrl}}/GraphApi/{{siteName}}/{{driveName}}/{{folderPath}}/NewFile.pdf
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  Name: NewFile
+  File: @file(C:\Users\nitin\OneDrive\Documents\Aaravhomework.pdf)
+}

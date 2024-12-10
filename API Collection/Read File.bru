@@ -1,0 +1,15 @@
+meta {
+  name: Read File
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/GraphApi/{{siteName}}/{{driveName}}/{{folderPath}}/{{fileName}}?select=id,name,size,webUrl,createdDateTime,lastModifiedDateTime,file
+  body: none
+  auth: none
+}
+
+params:query {
+  select: id,name,size,webUrl,createdDateTime,lastModifiedDateTime,file
+}

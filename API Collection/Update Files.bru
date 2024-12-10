@@ -1,0 +1,16 @@
+meta {
+  name: Update Files
+  type: http
+  seq: 6
+}
+
+put {
+  url: {{baseUrl}}/GraphApi/{{siteName}}/{{driveName}}/{{folderPath}}
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  Name: NewFile.pdf
+  File: @file(C:\Users\nitin\OneDrive\Documents\Credit Application[3961].pdf)
+}

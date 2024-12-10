@@ -1,0 +1,17 @@
+meta {
+  name: Update Metadata
+  type: http
+  seq: 7
+}
+
+patch {
+  url: {{baseUrl}}/GraphApi/{{siteName}}/{{driveName}}/{{folderPath}}/NewFile.pdf
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+     "name": "UpdatedFileName.pdf"
+  }
+}
